@@ -25,7 +25,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ftp.josielfaria.com
-          username: github-josielfaria@github-actions.josielfaria.com
+          username: git-actions@josielfaria.com
           password: githubactions
           server-dir: public/
           exclude: .git*
