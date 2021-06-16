@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      -develop
+name: Deploy test on push
+jobs:
+  web-deploy:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Get latest code
+        user: actions/checkout@v2
+
+      - name: Sync files
+        user: SamKirklad/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_host }}
+          password: ${{ secrets.ftp_host }}
+          server-dir: public_html/===
