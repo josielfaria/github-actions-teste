@@ -17,7 +17,7 @@ jobs:
           server: ftp.josielfaria.com
           username: github-josielfaria@github-actions.josielfaria.com
           password: githubactions
-          server-dir: public
+          server-dir: public/
           exclude: .git*
             - **.git*
             - .git*/**
