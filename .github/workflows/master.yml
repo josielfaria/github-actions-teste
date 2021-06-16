@@ -26,7 +26,7 @@ jobs:
         with:
           server: ftp.josielfaria.com
           username: git-actions@git-actions.josielfaria.com
-          password: ${{ secrets.ftp_password }}
+          password: ${{ secrets.FTP_PASSWORD }}
           exclude: .git*
             - **.git*
             - .git*/**
