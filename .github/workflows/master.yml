@@ -27,3 +27,4 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
+          exclude: .git** .git*/** .github** .github*/** node_modules** node_modules*/** src/** src/*/** .vscode* .vscode*/** .gitignore* .gitignore*/**  .browserslistrc* .browserslistrc*/**  .editorconfig* .editorconfig*/** package.json* package.json*/** package-lock.json* package-lock.json*/**  README.md* README.md*/** tsconfig.json* tsconfig.json*/** tsconfig.app.json* tsconfig.app.json*/** tsconfig.spec.json* tsconfig.spec.json*/** tslint.md* tslint.md*/**
