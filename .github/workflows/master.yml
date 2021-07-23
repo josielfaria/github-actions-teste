@@ -34,6 +34,6 @@ jobs:
             - node_modules/**
             - node_modules/**/*
             - **/node_modules/**
-            - e2e/**/*
-            - tslint.json*/**
+            - e2e/
+            - tslint.json
             - .editorconfig
